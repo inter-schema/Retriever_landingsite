@@ -1,0 +1,8 @@
+{
+  "name": "골드리트리버 — 잃어버린 호기심을 물어오는 우표 일기",
+  "description": "무뎌진 산책길 위에서 잊고 지낸 물음표를 다시 물어오는 수채화 우표 일기 앱, 골드리트리버(Golden Memory Retriever) 공식 웹사이트 및 원스토어 다운로드 페이지입니다.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,503 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="icon" href="/assets/illustrations/illust_1_2a62b1aa.webp" />
+    <title>골드리트리버 — 잃어버린 호기심을 물어오는 우표 일기</title>
+    <meta
+      name="description"
+      content="무뎌진 산책길 위에서 잊고 지낸 물음표를 다시 물어오는 수채화 우표 일기 앱, 골드리트리버(Golden Memory Retriever) 공식 웹사이트 및 원스토어 다운로드 페이지입니다."
+    />
+    <meta property="og:title" content="골드리트리버 — 잃어버린 호기심을 물어오는 우표 일기" />
+    <meta
+      property="og:description"
+      content="무뎌진 산책길 위에서 잊고 지낸 물음표를 다시 물어오는 수채화 우표 일기 앱, 골드리트리버(Golden Memory Retriever) 공식 웹사이트 및 원스토어 다운로드 페이지입니다."
+    />
+    <meta property="og:image" content="/assets/illustrations/illust_1_2a62b1aa.webp" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Gowun+Dodum&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- 상단 애플 스타일 글래스 네비게이션 (3-Zone Contract) -->
+    <header class="top-nav" aria-label="상단 장면 탐색">
+      <a href="#top" class="brand-mini">
+        <img
+          src="/assets/illustrations/illust_1_2a62b1aa.webp"
+          alt="골드리트리버 우표 로고 아이콘"
+          referrerpolicy="no-referrer"
+        />
+        <span class="b-title">골드<em>리트리버</em></span>
+      </a>
+
+      <nav class="nav-links" aria-label="이야기 챕터 탐색">
+        <a href="#scene-past">그때</a>
+        <a href="#scene-now">지금</a>
+        <a href="#scene-disc">발견</a>
+        <a href="#scene-diary">기록</a>
+        <a href="#scene-stamp">우표 만들기</a>
+        <a href="#scene-album">다운로드 창구</a>
+      </nav>
+
+      <a
+        href="https://m.onestore.co.kr/v2/ko-kr/app/0001012915"
+        class="nav-cta js-onestore-smart-link"
+        aria-label="원스토어에서 골드리트리버 다운로드"
+      >
+        <span class="onestore-emblem" aria-hidden="true">1</span>
+        <span>원스토어 다운로드</span>
+      </a>
+      <div class="scroll-bar" id="scrollBar"></div>
+    </header>
+
+    <!-- 우측 씬 네비게이션 도트 -->
+    <div class="scene-dots" role="navigation" aria-label="장면 바로가기">
+      <button type="button" class="dot-btn active" data-target="top" aria-label="인트로"></button>
+      <button type="button" class="dot-btn" data-target="scene-past" aria-label="1장: 그때"></button>
+      <button type="button" class="dot-btn" data-target="scene-now" aria-label="2장: 지금"></button>
+      <button type="button" class="dot-btn" data-target="scene-disc" aria-label="3장: 발견"></button>
+      <button type="button" class="dot-btn" data-target="scene-diary" aria-label="4장: 기록"></button>
+      <button type="button" class="dot-btn" data-target="scene-stamp" aria-label="5장: 가공"></button>
+      <button type="button" class="dot-btn" data-target="scene-album" aria-label="6장: 수집 및 다운로드"></button>
+    </div>
+
+    <main class="toon" id="top">
+      <!-- Scene 0: 인트로 (우표를 메인 로고로 활용 + 원스토어 즉시 다운로드) -->
+      <section class="intro cut is-active" data-scene-label="INTRO · 잃어버린 호기심을 물어오는 일기" aria-label="인트로">
+        <div class="hero-logo-wrap rv in">
+          <img
+            class="hero-logo-stamp"
+            src="/assets/illustrations/illust_1_2a62b1aa.webp"
+            alt="골드리트리버 대표 로고 — 나뭇가지를 물고 있는 리트리버 우표"
+            referrerpolicy="no-referrer"
+          />
+          <div class="hero-logo-seal" aria-hidden="true">
+            <span>호기심<br />우체국<br /><b>인장</b></span>
+          </div>
+        </div>
+        <h1 class="appname rv in">골드<em>리트리버</em></h1>
+        <p class="tagline rv in">
+          무뎌진 산책길 위에서, 잊고 지낸 물음표를 다시 물어오는 우표 일기.
+        </p>
+
+        <!-- 인트로 원스토어 스마트 다운로드 액션 바 -->
+        <div class="hero-actions rv in">
+          <a
+            href="https://m.onestore.co.kr/v2/ko-kr/app/0001012915"
+            class="btn-onestore-primary js-onestore-smart-link"
+            id="heroOneStoreBtn"
+          >
+            <span class="onestore-emblem" aria-hidden="true">1</span>
+            <span>원스토어 앱으로 바로 다운로드</span>
+          </a>
+          <a href="#scene-past" class="btn-hero-secondary">
+            <span>이야기 보기 ↓</span>
+          </a>
+        </div>
+
+        <div class="qbig" aria-hidden="true">?</div>
+        <a href="#scene-past" class="scroll-hint">천천히 아래로<span aria-hidden="true">⌄</span></a>
+      </section>
+
+      <!-- Scene 1: 프롤로그 (그때 — 젊었던 강아지 시절) -->
+      <section class="cut" id="scene-past" data-scene-label="그때 — 온 세상이 물음표이던 시절" aria-label="프롤로그 — 그때">
+        <div class="scene-grid split">
+          <div class="visual-col">
+            <div class="panel tall past-panel rv">
+              <img
+                src="/assets/illustrations/illust_2_a8b30f8d.webp"
+                alt="햇살 가득한 정원에서 나비와 나뭇가지를 호기심 가득한 눈으로 바라보는 어린 골드리트리버"
+                referrerpolicy="no-referrer"
+              />
+              <span class="q-spark s1" aria-hidden="true">?</span>
+              <span class="q-spark s2" aria-hidden="true">?</span>
+              <span class="q-spark s3" aria-hidden="true">?</span>
+            </div>
+          </div>
+          <div class="copy-col">
+            <h2 class="scene-title rv">
+              그때는, 눈이 닿는 모든 자리가<br />반짝이는 <span class="hl">물음표</span>였다.
+            </h2>
+            <p class="caption rv">
+              작은 나뭇가지 하나, 노란 나비의 가벼운 날갯짓에도<br />
+              마음이 먼저 두근거리던 시절이 있었다.
+            </p>
+            <div class="trail rv" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 13.2c2.9 0 5.6 2.3 5.6 4.6 0 1.5-1.1 2.4-2.7 2.4-1 0-1.9-.4-2.9-.4s-1.9.4-2.9.4c-1.6 0-2.7-.9-2.7-2.4 0-2.3 2.7-4.6 5.6-4.6ZM6.2 8.6c1.1.3 1.7 1.7 1.4 3.1-.3 1.4-1.4 2.3-2.5 2-1.1-.3-1.7-1.7-1.4-3.1.3-1.4 1.4-2.3 2.5-2Zm11.6 0c1.1-.3 2.2.6 2.5 2 .3 1.4-.3 2.8-1.4 3.1-1.1.3-2.2-.6-2.5-2-.3-1.4.3-2.8 1.4-3.1ZM9.3 3.6c1.2.1 2 1.4 1.9 2.9-.1 1.5-1.1 2.6-2.3 2.5-1.2-.1-2-1.4-1.9-2.9.1-1.5 1.1-2.6 2.3-2.5Zm5.4 0c1.2-.1 2.2 1 2.3 2.5.1 1.5-.7 2.8-1.9 2.9-1.2.1-2.2-1-2.3-2.5-.1-1.5.7-2.8 1.9-2.9Z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 13.2c2.9 0 5.6 2.3 5.6 4.6 0 1.5-1.1 2.4-2.7 2.4-1 0-1.9-.4-2.9-.4s-1.9.4-2.9.4c-1.6 0-2.7-.9-2.7-2.4 0-2.3 2.7-4.6 5.6-4.6ZM6.2 8.6c1.1.3 1.7 1.7 1.4 3.1-.3 1.4-1.4 2.3-2.5 2-1.1-.3-1.7-1.7-1.4-3.1.3-1.4 1.4-2.3 2.5-2Zm11.6 0c1.1-.3 2.2.6 2.5 2 .3 1.4-.3 2.8-1.4 3.1-1.1.3-2.2-.6-2.5-2-.3-1.4.3-2.8 1.4-3.1ZM9.3 3.6c1.2.1 2 1.4 1.9 2.9-.1 1.5-1.1 2.6-2.3 2.5-1.2-.1-2-1.4-1.9-2.9.1-1.5 1.1-2.6 2.3-2.5Zm5.4 0c1.2-.1 2.2 1 2.3 2.5.1 1.5-.7 2.8-1.9 2.9-1.2.1-2.2-1-2.3-2.5-.1-1.5.7-2.8 1.9-2.9Z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 13.2c2.9 0 5.6 2.3 5.6 4.6 0 1.5-1.1 2.4-2.7 2.4-1 0-1.9-.4-2.9-.4s-1.9.4-2.9.4c-1.6 0-2.7-.9-2.7-2.4 0-2.3 2.7-4.6 5.6-4.6ZM6.2 8.6c1.1.3 1.7 1.7 1.4 3.1-.3 1.4-1.4 2.3-2.5 2-1.1-.3-1.7-1.7-1.4-3.1.3-1.4 1.4-2.3 2.5-2Zm11.6 0c1.1-.3 2.2.6 2.5 2 .3 1.4-.3 2.8-1.4 3.1-1.1.3-2.2-.6-2.5-2-.3-1.4.3-2.8 1.4-3.1ZM9.3 3.6c1.2.1 2 1.4 1.9 2.9-.1 1.5-1.1 2.6-2.3 2.5-1.2-.1-2-1.4-1.9-2.9.1-1.5 1.1-2.6 2.3-2.5Zm5.4 0c1.2-.1 2.2 1 2.3 2.5.1 1.5-.7 2.8-1.9 2.9-1.2.1-2.2-1-2.3-2.5-.1-1.5.7-2.8 1.9-2.9Z"/></svg>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Scene 2: 프롤로그 (지금 — 무심히 걷는 노견) -->
+      <section class="cut" id="scene-now" data-scene-label="지금 — 작아져 버린 호기심" aria-label="프롤로그 — 지금">
+        <div class="scene-grid split reverse">
+          <div class="visual-col">
+            <div class="panel now-panel rv">
+              <img
+                src="/assets/illustrations/illust_3_ba295850.webp"
+                alt="같은 골목을 무심히 지나치는 나이 든 골드리트리버의 모습 (흑백)"
+                referrerpolicy="no-referrer"
+              />
+              <span class="tinyq" aria-hidden="true">?</span>
+            </div>
+          </div>
+          <div class="copy-col">
+            <h2 class="scene-title rv">
+              언제부터였을까,<br />계절을 그냥 스쳐 지나치게 된 건.
+            </h2>
+            <div class="shrinkq rv" aria-hidden="true">
+              <span class="q1">?</span><span class="q2">?</span><span class="q3">?</span>
+              <div style="font-size:.98rem; margin-top:.4rem;">다 안다고 믿는 익숙한 길 위에서, 궁금해하는 마음도 작아졌다.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Scene 3: 발견 (멈춰 선 시선 — 긴 글 제거 및 여백 중심 가독성) -->
+      <section class="cut" id="scene-disc" data-scene-label="발견 — 다시 멈춰 선 시선" aria-label="발견 — 멈춰 선 시선">
+        <div class="scene-grid split">
+          <div class="visual-col">
+            <div class="panel disc-panel rv">
+              <img
+                src="/assets/illustrations/illust_4_9c83514e.webp"
+                alt="매일 지나치던 골목, 아스팔트 틈의 새싹 앞에 발길을 멈춘 나이 든 골드리트리버"
+                referrerpolicy="no-referrer"
+              />
+              <span class="floatq" aria-hidden="true">?</span>
+            </div>
+          </div>
+          <div class="copy-col">
+            <div class="diary-copy-decor rv">
+              <div class="ink-divider" aria-hidden="true" style="margin-bottom:0.5rem;">
+                <span></span>
+                <svg viewBox="0 0 24 24"><path d="M17 8C8 10 5.9 16.17 3.82 21.34l1.89.66.95-2.3c.48.17.98.3 1.34.3C19 20 22 3 22 3c-1 2-8 2.25-13 3.25S2 11.5 2 13.5s1.75 3.75 1.75 3.75C7 8 17 8 17 8Z"/></svg>
+                <span></span>
+              </div>
+              <h2 class="scene-title">
+                그러다 문득, 가장 낮은 곳에서<br />발길이 <span class="hl">멈췄다</span>.
+              </h2>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Scene 4: 기록 (호기심 일기 — 탭 제거 및 텍스트 좌측 정렬 해결) -->
+      <section class="cut" id="scene-diary" data-scene-label="기록 — 물음 하나를 남기는 일기" aria-label="기록 — 호기심 일기">
+        <div class="scene-grid split reverse">
+          <div class="visual-col">
+            <div class="phone-wrap rv">
+              <div class="phone" role="img" aria-label="골드리트리버 앱의 호기심 일기 화면 예시">
+                <div class="screen">
+                  <div class="screen-head">
+                    <div class="dot">?</div>
+                    <div>
+                      <div class="t1">오늘의 호기심</div>
+                      <div class="t2">골드리트리버가 물어왔어요</div>
+                    </div>
+                  </div>
+                  <div class="screen-body">
+                    <div class="diary-date" id="diaryDate">오늘</div>
+                    <div class="diary-text"><span id="typed"></span><span class="caret" aria-hidden="true"></span></div>
+                  </div>
+                  <div class="screen-foot">
+                    <a href="#scene-stamp" class="chip" style="text-decoration:none;">사진 한 장</a>
+                    <a
+                      href="https://m.onestore.co.kr/v2/ko-kr/app/0001012915"
+                      class="chip main js-onestore-smart-link"
+                      style="text-decoration:none;"
+                    >
+                      일기 남기기
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="copy-col">
+            <div class="diary-copy-decor rv">
+              <span class="decor-q q-left" aria-hidden="true">?</span>
+              <span class="decor-q q-right" aria-hidden="true">?</span>
+
+              <div class="pen-flourish" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+                  <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+                  <path d="M2 2l7.586 7.586"></path>
+                  <circle cx="11" cy="11" r="2"></circle>
+                </svg>
+              </div>
+
+              <h2 class="scene-title">
+                정답을 적어 두는 메모 대신,<br /><span class="hl">물음 하나</span>를 아껴 적는 일기.
+              </h2>
+
+              <div class="ink-divider" aria-hidden="true">
+                <span></span>
+                <svg viewBox="0 0 24 24"><path d="M17 8C8 10 5.9 16.17 3.82 21.34l1.89.66.95-2.3c.48.17.98.3 1.34.3C19 20 22 3 22 3c-1 2-8 2.25-13 3.25S2 11.5 2 13.5s1.75 3.75 1.75 3.75C7 8 17 8 17 8Z"/></svg>
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Scene 5: 가공 (기억을 우표로) -->
+      <section class="cut" id="scene-stamp" data-scene-label="가공 — 그날의 사진을 우표로" aria-label="가공 — 기억을 우표로">
+        <div class="scene-grid split">
+          <div class="visual-col only-desktop-panel">
+            <div class="panel tall rv">
+              <img
+                src="/assets/illustrations/illust_5_08e6caae.webp"
+                alt="펼쳐진 일기장 위에 놓인 노견의 앞발과 나뭇가지, 그리고 새싹 우표"
+                referrerpolicy="no-referrer"
+              />
+            </div>
+          </div>
+          <div class="copy-col">
+            <h2 class="scene-title rv">
+              발걸음이 멈춘 그 찰나를 찍어,<br /><span class="hl">오늘의 우표</span>로 부칩니다.
+            </h2>
+            <p class="caption rv" style="margin-bottom:.65rem;">
+              톱니 테두리와 오늘 날짜의 소인으로 남기는 한 장의 기억.
+            </p>
+            <div class="lab rv" id="stampLab">
+              <div class="stage">
+                <div class="photo-card">
+                  <img
+                    src="/assets/illustrations/illust_4_9c83514e.webp"
+                    alt="새싹을 발견한 골목 사진"
+                    style="object-position:50% 85%;"
+                    referrerpolicy="no-referrer"
+                  />
+                </div>
+                <div class="stamp-result">
+                  <div class="stamp-wrap">
+                    <img
+                      src="/assets/illustrations/illust_4_9c83514e.webp"
+                      alt="우표로 가공된 새싹 사진"
+                      style="object-position:50% 85%;"
+                      referrerpolicy="no-referrer"
+                    />
+                    <div class="postmark">
+                      <span>골드리트리버<br /><b class="pm-date">오늘</b><br />호기심 우체국</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button type="button" class="btn make-btn" id="makeStampBtn">우표로 만들기</button>
+              <p class="done-msg">톡 — 오늘의 일기장 위에 나만의 우표가 내려앉았습니다.</p>
+              <div class="again-row">
+                <button type="button" class="btn ghost" id="againBtn">다시 해보기</button>
+                <a
+                  href="https://m.onestore.co.kr/v2/ko-kr/app/0001012915"
+                  class="btn js-onestore-smart-link"
+                  style="text-decoration:none; display:inline-flex; align-items:center; gap:0.4rem;"
+                >
+                  <span>원스토어에서 앱 받기</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Scene 6 (마지막 슬라이드): Retrieve Your Golden Memory & 원스토어 다운로드 -->
+      <section
+        class="cut final-album-cut"
+        id="scene-album"
+        data-scene-label="Retrieve Your Golden Memory"
+        aria-label="수집 — 채워지는 우표첩 및 원스토어 다운로드"
+      >
+        <div class="scene-grid split reverse">
+          <div class="visual-col">
+            <div class="panel tall rv">
+              <img
+                src="/assets/illustrations/illust_6_ad12bfd0.webp"
+                alt="일상의 작은 장면들이 담긴 사진 우표들로 채워진 우표첩과 그 곁에서 미소 짓는 노견 골드리트리버"
+                referrerpolicy="no-referrer"
+              />
+            </div>
+          </div>
+          <div class="copy-col">
+            <div class="golden-memory-lockup rv">
+              <div class="golden-memory-ornament" aria-hidden="true">
+                <span class="orn-line"></span>
+                <svg viewBox="0 0 24 24" class="orn-leaf">
+                  <path d="M17 8C8 10 5.9 16.17 3.82 21.34l1.89.66.95-2.3c.48.17.98.3 1.34.3C19 20 22 3 22 3c-1 2-8 2.25-13 3.25S2 11.5 2 13.5s1.75 3.75 1.75 3.75C7 8 17 8 17 8Z"/>
+                </svg>
+                <span class="orn-line"></span>
+              </div>
+              <h2 class="retrieve-hero-title">
+                Retrieve Your<br />
+                <span class="hl-gold">Golden Memory.</span>
+              </h2>
+            </div>
+
+            <!-- 황금빛 우표 티켓 & 원스토어 직통 다운로드 카드 -->
+            <div class="golden-memory-card rv">
+              <!-- 수채화 우표 티켓 배너 클릭 시 원스토어 앱 딥링크 즉시 연결 -->
+              <a
+                href="https://m.onestore.co.kr/v2/ko-kr/app/0001012915"
+                class="download-asset-link js-onestore-smart-link"
+                id="downloadAppLink"
+                aria-label="우표 티켓을 눌러 원스토어에서 골드리트리버 앱 다운로드"
+              >
+                <img
+                  src="/assets/illustrations/illust_7_d47cb366.webp"
+                  alt="골드리트리버 우표첩 앱 다운로드 티켓 배너"
+                  referrerpolicy="no-referrer"
+                />
+                <span class="ticket-overlay-tag">
+                  <span class="onestore-emblem" style="width:17px;height:17px;font-size:0.68rem;">1</span>
+                  <span>ONE store 다운로드</span>
+                </span>
+              </a>
+
+              <div class="onestore-cta-stack">
+                <a
+                  href="https://m.onestore.co.kr/v2/ko-kr/app/0001012915"
+                  class="btn-onestore-full js-onestore-smart-link"
+                  id="mainOneStoreDownloadBtn"
+                >
+                  <span class="onestore-emblem" aria-hidden="true">1</span>
+                  <span>원스토어에서 골드리트리버 다운로드</span>
+                </a>
+
+                <a
+                  href="onestore://common/product/0001012915"
+                  class="btn-onestore-app-open js-onestore-scheme-btn"
+                  id="directOneStoreAppBtn"
+                  aria-label="원스토어 앱에서 골드리트리버 다운로드 화면 바로 열기"
+                >
+                  <svg class="app-open-icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="6" y="2.5" width="12" height="19" rx="2.5" />
+                    <line x1="10" y1="18.5" x2="14" y2="18.5" />
+                    <path d="M10 10.5L14 6.5M14 6.5H10.5M14 6.5V10" />
+                  </svg>
+                  <span>원스토어 앱에서 열기</span>
+                </a>
+              </div>
+
+              <div class="download-toast" id="downloadToast" role="status" aria-live="polite">
+                톡 — 호기심 우체국에서 원스토어 골드리트리버 다운로드 화면으로 안내합니다.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <footer>
+          <div class="fname">골드리트리버 · GOLDEN MEMORY RETRIEVER POST</div>
+          <div>오늘도 당신의 평범한 산책길에 작은 물음표 하나가 다정하게 피어나기를 바랍니다.</div>
+          <div class="footer-links">
+            <a
+              href="https://m.onestore.co.kr/v2/ko-kr/app/0001012915"
+              class="js-onestore-smart-link"
+            >
+              원스토어 다운로드 (0001012915)
+            </a>
+            <span aria-hidden="true">·</span>
+            <button type="button" class="js-open-privacy-modal" id="footerPrivacyBtn">
+              개인정보처리방침
+            </button>
+            <span aria-hidden="true">·</span>
+            <a href="/privacy_policy.html" target="_blank" rel="noopener noreferrer">
+              개인정보처리방침 전문 보기
+            </a>
+          </div>
+        </footer>
+      </section>
+    </main>
+
+    <!-- 모달 1: 원스토어 앱 바로가기 & 설치 안내 창구 -->
+    <div
+      class="modal-backdrop"
+      id="onestoreGuideModal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="guideModalTitle"
+    >
+      <div class="modal-card">
+        <div class="modal-head">
+          <h3 id="guideModalTitle">호기심 우체국 · 원스토어 설치 안내</h3>
+          <button type="button" class="modal-close" id="closeGuideModal">닫기</button>
+        </div>
+        <div class="qr-showcase">
+          <img
+            src="/assets/aistudio/image_42c29d63.png"
+            alt="골드리트리버 앱 메인 화면"
+            style="width:170px; border-radius:12px; border:1px solid var(--line);"
+            referrerpolicy="no-referrer"
+          />
+          <div style="font-size:0.88rem; line-height:1.6; color:var(--ink);">
+            <b>원스토어 이미 설치된 스마트폰</b>에서 아래 버튼을 누르면<br />
+            원스토어 앱 내부의 <b>골드리트리버 다운로드 화면</b>으로 즉시 이동합니다.
+          </div>
+          <div class="url-display-box">
+            웹 링크: https://m.onestore.co.kr/v2/ko-kr/app/0001012915<br />
+            앱 딥링크: onestore://common/product/0001012915
+          </div>
+          <div style="display:flex; width:100%; gap:0.5rem; flex-wrap:wrap;">
+            <a
+              href="onestore://common/product/0001012915"
+              class="btn-onestore-full js-onestore-scheme-btn"
+              style="flex:1;"
+            >
+              <span class="onestore-emblem" aria-hidden="true">1</span>
+              <span>원스토어 앱으로 바로 열기</span>
+            </a>
+            <button type="button" class="btn ghost js-copy-onestore-url">
+              링크 복사
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 모달 2: 골드리트리버 개인정보처리방침 (onestore_release_kit 통합) -->
+    <div
+      class="modal-backdrop"
+      id="privacyPolicyModal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="privacyModalTitle"
+    >
+      <div class="modal-card">
+        <div class="modal-head">
+          <h3 id="privacyModalTitle">골드리트리버 개인정보처리방침</h3>
+          <button type="button" class="modal-close" id="closePrivacyModal">닫기</button>
+        </div>
+        <div class="privacy-content">
+          <p><strong>시행일자:</strong> 2026년 11월 16일</p>
+          <p>
+            <strong>「골드리트리버(Golden Memory Retriever)」</strong>(이하 "앱")는 이용자의 개인정보를 소중히 여기며, 「개인정보 보호법」 및 「정보통신망 이용촉진 및 정보보호 등에 관한 법률」 등 대한민국 관계 법령을 준수합니다.
+          </p>
+          <h4>1. 개인정보의 수집 및 이용 내역 (외부 서버 수집 없음)</h4>
+          <ul>
+            <li>본 앱은 별도의 회원가입이나 외부 서버 연동 없이 동작하는 <strong>기기 내부 저장(Local-Only) 우표 일기 애플리케이션</strong>입니다.</li>
+            <li>개발자는 이용자의 성명, 연락처, 위치정보, 기기 식별정보 등 어떠한 개인정보도 외부 서버로 수집·전송·보관하지 않습니다.</li>
+            <li>이용자가 작성한 우표 일기 및 첨부 사진은 오직 이용자 본인의 기기 내부 저장소에만 안전하게 저장됩니다.</li>
+          </ul>
+          <h4>2. 스마트폰 앱 접근권한 안내</h4>
+          <ul>
+            <li><strong>필수적 접근권한:</strong> 없음</li>
+            <li><strong>선택적 접근권한:</strong> 카메라 (<code>android.permission.CAMERA</code>) — 우표 일기에 첨부할 산책 사진을 직접 촬영할 때만 요청합니다. 동의하지 않더라도 글씨 일기 작성, 사진첩 불러오기, PDF 인쇄 및 저장 등 모든 기본 기능을 정상적으로 이용할 수 있습니다.</li>
+          </ul>
+          <h4>3. 데이터의 보유 및 파기</h4>
+          <p>모든 일기 및 사진 데이터는 이용자의 스마트폰 내부에만 보관되므로, 앱 내에서 기록을 삭제하거나 앱을 삭제(언인스톨)하면 기기 내 데이터가 즉시 파기됩니다.</p>
+          <h4>4. 제3자 제공 및 위탁</h4>
+          <p>본 앱은 외부 서버로 개인정보를 수집하지 않으므로 제3자에게 개인정보를 제공하거나 위탁하지 않습니다.</p>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
